@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title> <!-- nome da pag-->
+    <link rel="stylesheet" href="style.css"> <!-- linkagem com o css-->
+    <link rel="preconnect" href="https://fonts.google.com/"> <!-- fonte-->
+</head>
+<body>
+    <header class="header">
+        <div class="esquerda"></div> <!-- só para criar um espaço vaizio para usar no display grid-->
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logo.png" alt="logo"></a><!-- logo principal-->
+        </div>
+        <div class="icones"> <!-- nessa pag é inutil-->
+        </div>
+    </header>
+    <main>
+        <section class="login"> <!-- cria o quadrado grande do login (fundo)-->
+            <div class="caixa-login"> <!-- cria o quadrado no qual vai ficar o conteúdo dentro-->
+                <h2 class="titulo-login">Entre</h2> <!-- titulo principal da página -->
+                <form action="#" method="post" class="formulario-login"> <!-- formulários (onde vai colocar a senha e o email)-->
+                    <input type="text" name="username" placeholder="Email/telefone" required> <!-- caixa do email e telefone-->
+                    <div class="senha">
+                        <input type="password" name="password" placeholder="Senha" required><!-- caixa da senha-->
+                        <span class="icone-aparecer">&#9660;</span> <!-- icone para mostrar a senha -->
+                    </div>
+                    <button type="submit" class="botao-login">Entre</button> <!-- botão para enviar os dados (entrar na conta)-->
+                    <form action="#" method="post" class="formulario-login" onsubmit="alert('Login enviado!')">
+
+                </form>
+                <a href="#" class="esqueci-senha">Esqueci minha senha</a> <!-- link para direcionar na pag de esquecia a senha-->
+
+                <div class="separador">
+                    <hr><!--linha horizontal-->
+                    <span>OU</span><!--deixa no meio-->
+                    <hr> 
+                </div>
+                <div class="google-login">
+                <button class="botao-google"> <!-- botão para logar com a conta do google-->
+                    Google
+                </button>
+                <button class="botao-cadastro">Cadastrar</button><!-- para ir para a pag do cadastro-->
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="contatos">
+            <a href="https://www.instagram.com/jessicaejansson/" class="contatos"> <!-- link para direcionamento para a conta do instagram-->
+                <img src="imagens/contato/insta.png" alt="Instagram">
+                Jessica Jansson
+            </a>
+            <a href="https://www.tiktok.com/@jessicaejansson" class="contatos"> <!-- link para direcionamento para a conta do tiktok-->
+                <img src="imagens/contato/tiktok.png" alt="TikTok">
+                Jessica Jansson
+            </a>
+            <a href="https://wa.me/5541987053625" class="contatos"> <!-- link para direcionamento para a conta do whats -->
+                <img src="imagens/contato/whats.png" alt="WhatsApp">
+                (41) 98705-3625
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

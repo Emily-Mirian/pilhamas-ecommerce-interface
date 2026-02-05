@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Schoolbell&display=swap'); /* importa fontes externas do Google Fonts */
+* {
+    margin: 0; /* zera a margem externa do elemento */
+    padding: 0; /* zera o espaçamento interno do elemento */
+    box-sizing: border-box; /* muda a forma como o tamanho do elemento é calculado */
+}
+
+body{
+    font-family: 'Roboto'; /* define a fonte usada no texto */
+    background-color: #ffffff; /* define a cor de fundo */
+    color: #000000; /* define a cor do texto */
+}
+
+
+
+.header{
+    display: grid; /* grid faz com q seja uma "tabela"*/ 
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;/*alinha vferticalmente*/ 
+    padding: 2px 20px; /* espaçamento interno do elemento */
+}
+.header .logo{ 
+    display: flex; /* define o modelo de exibição */
+    justify-content: center; /* controla o alinhamento horizontal (para o centro)*/
+}
+.header .logo img{ /*logo do pilhamas*/
+    height: 75px; /* define a altura */
+}
+.header .icones{
+    display: flex; /* define o modelo de exibição */
+    justify-content: flex-end; /* controla o alinhamento horizontal (para o centro) */
+}
+.header .icones img { /*carrinho e perfil*/
+    margin-left: 15px; /* define a margem esquerda */
+    cursor: pointer; /* muda o tipo do cursor (mouse => mãozinha) */
+    width: 40px; /* define a largura */
+}
+
+
+
+.navbar{
+    background-color: #ffce58; /* cor de fundo */
+    display: flex; /* define o modelo de exibição */
+    justify-content: center; /* controla o alinhamento horizontal  */
+    gap: 20px; /* espaço entre itens */
+    padding: 3px 0px; /* espaçamento interno do elemento */
+    width: 100%; /* define a largura */
+}
+.navbar a{
+    font-family: 'roboto'; /*  a fonte usada no texto */
+    text-decoration: none; /* tira o sublinhado, riscado etc. */
+    color: #000000; /* cor do texto */
+    font-weight: 500; /* define a espessura (negrito ou não) da fonte */
+    transition: color 0.3s; /* adiciona uma transição suave em animações */
+    padding: 5px 10px; /* espaçamento interno do elemento */
+    border-radius: 10px; /* arredonda os cantos */
+}
+.navbar a:hover {
+    color: #000; /* cor do texto */
+    background-color: #e87d25; /* cor de fundo */
+    transform: scale(1.05); /* aplica transformação de aumentar quando passa o mouse */
+}
+
+
+
+/*banner principal*/
+.banner img{
+    width: 100%; /* define a largura */
+    max-width: 100%; /*tlargura maxima*/
+    height: auto; /* altura */
+    display: block; /* define o modelo de exibição */
+}
+
+
+
+.bloco-mais-vendidos{
+    text-align: center; /* alinha o texto  */
+    margin: 30px 0; /* define a margem externa do elemento */
+}
+.compre{
+    background-color: #fff0de; /* cor de fundo */
+    font-family: "Schoolbell"; /* fonte usada no texto */
+    font-weight: 400; /* define a espessura da fonte */
+    font-size: 2rem; /* define o tamanho da fonte */
+    margin-block: 25px;
+    display: inline-block; /* modelo de exibição  */
+    padding: 5px 30px; /* espaçamento interno do elemento */
+}
+.vendido-categoria{
+    color: #ff5757; /* cor do texto */
+    font-family: "cormorant garamond"; /* define a fonte  */
+    font-weight: 600; /* define a espessura da fonte */
+    font-size: 2rem; /* define o tamanho da fonte */
+}
+.sesao{
+    display: flex; /* define o modelo de exibição */
+    justify-content: center; /* controla o alinhamento horizontal (centro) */
+    flex-wrap: wrap;/*quebra a linha se nn tiver espaço*/
+    gap:35px; /*da o espaço entre os itens*/ 
+    margin-bottom: 40px; /* define a margem inferior */
+}
+.produtos{
+    text-align: center; /* alinha o texto (centro) */
+    width: 250px; /* define a largura */
+    padding: 10px; /* define o espaçamento interno do elemento */
+    transition: transform 0.3s ease; /* adiciona uma transição suave em animações */
+}
+.produtos:hover {
+    transform: scale(1.05); /* aplica transformação de aumentar */
+}
+.produtos img{
+    width: 100%; /* define a largura */
+    border-radius: 15px; /* arredonda os cantos */
+}
+.nome-produto{
+    margin-top: 8px; /* define a margem superior */
+    font-family: "Schoolbell"; /* fonte usada no texto */
+    font-weight: 400; /* define a espessura da fonte */
+    font-size: 1.5rem; /* define o tamanho da fonte */
+    text-transform: capitalize; /* controla o uso de maiúsculas/minúsculas no texto */
+}
+.valor-produto{
+    font-family: "Roboto"; /* fonte usada no texto */
+    font-weight: 400; /* define a espessura da fonte */
+}
+
+
+
+.branco{
+    height: 80px; /* define a altura */
+    background: linear-gradient(to bottom, #ffffff, #88507a); /* define fundo (gradiente antes de entrar nas categorias)*/
+}
+
+
+.bloco-categorias{
+    background: linear-gradient(to bottom, #88507a, #3f2c59); /* define fundo (gradiente nas categorias) */
+    text-align: center; /* alinha o texto (centro) */
+    padding: 60px 0; /* define o espaçamento interno do elemento */
+    color: white; /* cor do texto */
+}
+.comprec{
+    font-family: "Schoolbell"; /* fonte usada no texto */
+    font-weight: 400; /* define a espessura da fonte */
+    font-size: 2rem; /* tamanho da fonte */
+    margin-block: 25px;
+}
+.vendido-cat{
+    color: #ffce58; /* cor do texto */
+    font-family: "cormorant garamond"; /* fonte usada no texto */
+    font-weight: 600; /* define a espessura da fonte */
+    font-size: 2rem; /* tamanho da fonte */
+}
+
+
+
+.footer{
+    background-color: #3f2c59; /* cor de fundo */
+    text-align: center; /* alinha o texto (centro) */
+    padding: 20px; /* define o espaçamento interno do elemento */
+}
+.footer .contatos{
+  display: flex; /* define o modelo de exibição */
+  justify-content: center; /* controla o alinhamento horizontal */
+  align-items: center; /* controla o alinhamento vertical */
+  gap: 35px; /* define o espaço entre itens */
+  flex-wrap: wrap;
+}
+.footer a{
+    color: #fff; /* cor do texto */
+    text-decoration: none; /* tira a decoração do texto */
+    font-family: "Roboto"; /* fonte usada no texto */
+}
+.footer img{
+    width: 30px; /* define a largura */
+}
+
+
+/*===================================
+                cadastro
+===================================*/
+
+.login {
+  min-height: 60vh; /* altura mínima do elemento */
+  display: flex; /* define o modelo de exibição */
+  align-items: center; /* controla o alinhamento vertical */
+  justify-content: center; /* controla o alinhamento horizontal */
+  background: linear-gradient(to bottom, #ffce58, #fd8951, #c9414d, #a9587a, #3f2c59); /* gradiente do fundo */
+  position: relative; /* define o tipo de posicionamento (relative) */
+  overflow: hidden; /* controla o que acontece com conteúdo que passa do limite */
+}
+.caixa-login {
+    position: relative; /* define o tipo de posicionamento*/
+    z-index: 1; /* controla a ordem de sobreposição dos elementos */
+    background-color: #2d1846; /* cor de fundo */
+    padding: 40px; /* espaçamento interno do elemento */
+    border-radius: 25px; /* arredonda os cantos */
+    text-align: center; /* alinha o texto */
+    width: 350px; /* define a largura */
+    color: #fff; /* cor do texto */
+}
+.titulo-login {
+    font-family: 'Roboto', sans-serif; /* fonte usada no texto */
+    font-size: 1.8rem; /* tamanho da fonte */
+    margin-bottom: 25px; /* define a margem inferior */
+}
+.formulario-login input {
+    width: 100%; /* define a largura */
+    padding: 10px; /* define o espaçamento interno do elemento */
+    margin-bottom: 15px; /* define a margem inferior */
+    border: none; /* define bordas */
+    border-radius: 5px; /* arredonda os cantos */
+    font-family: 'Roboto'; /* fonte usada no texto */
+    font-size: 1rem; /* tamanho da fonte */
+}
+.senha {
+  position: relative; /* define o tipo de posicionamento */
+}
+.icone-aparecer {
+  position: absolute; /* define o tipo de posicionamento */
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%); /* aplica transformação girar*/
+  cursor: pointer; /* muda o tipo do cursor */
+  font-size: 1.2rem; /* tamanho da fonte */
+  color: #333; /* cor do texto */
+}
+.botao-login {
+  width: 100%; /* define a largura */
+  background-color: #fdb99b; /* cor de fundo */
+  color: #000; /* cor do texto */
+  border: none; /* tira a borda */
+  padding: 10px; /* define o espaçamento interno do elemento */
+  border-radius: 5px; /* arredonda os cantos */
+  font-weight: bold; /* define a espessura da fonte */
+  font-family: 'Roboto'; /* fonte usada no texto */
+  cursor: pointer; /* muda o tipo do cursor */
+  transition: 0.3s; /* adiciona uma transição suave em animações */
+}
+.botao-login:hover {
+  transform: scale(1.05); /* aplica transformação de aumentar */
+  background-color: #ffc5a7; /* cor de fundo */
+}
+.esqueci-senha {
+  display: block; /* define o modelo de exibição  */
+  margin: 10px 0; /* define a margem externa do elemento */
+  color: #fff; /* cor do texto */
+  font-size: 0.9rem; /* tamanho da fonte */
+  text-decoration: none; /* tira a decoração */
+}
+.esqueci-senha:hover {
+  text-decoration: underline; /* coloca um sublinhado */
+}
+.separador {
+  display: flex; /* define o modelo de exibição */
+  align-items: center; /* controla o alinhamento vertical */
+  justify-content: center; /* controla o alinhamento horizontal */
+  color: #bbb; /* cor do texto */
+  margin: 15px 0; /* define a margem externa do elemento */
+  gap: 10px; /* define o espaço entre itens */
+}
+.separador hr {
+  flex: 1;
+  border: none ;/* tira a borda */
+  border-top: 1px solid #555; /* define apenas a borda superior */
+}
+.google-login {
+  display: flex; /* define o modelo de exibição */
+  justify-content: space-between; /* controla o alinhamento horizontal */
+  gap: 10px; /* define o espaço entre itens */
+}
+.botao-google, 
+.botao-cadastro {
+  flex: 1;
+  padding: 10px; /* define o espaçamento interno do elemento */
+  border: none; /* tira a borda */
+  border-radius: 5px; /* arredonda os cantos */
+  font-weight: bold; /* define a espessura da fonte */
+  cursor: pointer; /* muda o tipo do cursor */
+  font-family: 'Roboto'; /* fonte usada no texto */
+  transition: 0.3s; /* adiciona uma transição suave em animações */
+}
+.botao-google {
+  background-color: #fff; /* cor de fundo */
+  color: #000; /* cor do texto */
+}
+.botao-cadastro {
+  background-color: #a066cc; /* cor de fundo */
+  color: #fff; /* cor do texto */
+}
+.botao-google:hover,
+.botao-cadastro:hover {
+  transform: scale(1.05); /* aplica transformação de aumentar  */
+}
+
+/* ===================================
+        produtos
+===================================*/
+
+/* Estilo para cada bloco de categoria */
+.categoria-produtos {
+    margin: 40px 0; /* define a margem externa do elemento */
+    padding: 20px 0; /* define o espaçamento interno do elemento */
+    border-bottom: 2px solid #ccc; /* Linha sutil para separar as categorias */
+}
+
+.titulo-categoria {
+    font-family: "Schoolbell"; /* fonte usada no texto */
+    font-weight: 400; /* espessura da fonte */
+    font-size: 2.2rem; /* tamanho da fonte */
+    color: #3f2c59; /* cor do texto */
+    text-align: center; /* alinha o texto (centro) */
+    margin-bottom: 30px; /* define a margem inferior */
+    padding-bottom: 5px;
+}
+
+
+.linha-produtos {
+    display: flex; /* define o modelo de exibição */
+    justify-content: center; /* controla o alinhamento horizontal */
+    flex-wrap: wrap; /* Permite que os produtos quebrem caso a tela seja menor */
+    gap: 30px; /* define o espaço entre itens */
+}
+
+
+.produto {
+    text-align: center; /* alinha o texto (centro) */
+    width: 250px; /* define a largura */
+    padding: 15px; /* espaçamento interno do elemento */
+    border: 1px solid #eee; /* define bordas (espessura, estilo, cor) */
+    border-radius: 10px; /* arredonda os cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* adiciona uma sombra ao redor do elemento */
+    transition: all 0.3s ease; /* adiciona uma transição suave em animações */
+    background-color: #fff; /* cor de fundo */
+    color: #000; /* cor do texto */
+}
+
+.produto:hover {
+    transform: translateY(-5px); /* Efeito de elevação sutil */ 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* adiciona uma sombra ao redor do elemento */
+    border-color: #ffce58; /* cor da borda */
+}
+
+.produto img {
+    width: 100%; /* define a largura */
+    height: 250px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer, cortando se necessário */
+    border-radius: 8px; /* arredonda os cantos */
+    margin-bottom: 10px; /* define a margem inferior */
+}
+
+.produto h3 {
+    font-family: "Cormorant Garamond"; /* fonte usada no texto */
+    font-weight: 600; /* espessura da fonte */
+    font-size: 1.4rem; /* tamanho da fonte */
+    margin: 8px 0; /* define a margem externa do elemento */
+}
+
+.valor {
+    font-weight: bold; /* define a espessura da fonte */
+    color: #ff5757; /* define a cor do texto */
+    margin-bottom: 15px; /* define a margem inferior */
+}
+
+.botao-comprar {
+    background-color: #ffce58; /* cor de fundo */
+    color: #3f2c59; /* cor do texto */
+    border: none; /* tira a borda */
+    padding: 10px 20px; /* define o espaçamento interno do elemento */
+    border-radius: 5px; /* arredonda os cantos */
+    font-weight: bold; /* coloca em negrito */
+    cursor: pointer; /* muda o tipo do cursor */
+    transition: background-color 0.2s; /* adiciona uma transição suave na cor de fundo */
+}
+
+.botao-comprar:hover {
+    background-color: #e87d25; /* cor de fundo */
+    color: #fff; /* cor do texto */
+}

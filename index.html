@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilhamas</title> <!-- nome da pag-->
+    <link rel="stylesheet" href="style.css"> <!-- linkagem com o css-->
+    <link rel="preconnect" href="https://fonts.google.com/"> <!-- fonte-->
+</head>
+<body>
+    <header class="header">
+        <div class="esquerda"></div> <!-- só para criar um espaço vaizio para usar no display grid-->
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logo.png" alt="logo"></a><!-- logo principal-->
+        </div>
+        <div class="icones"> <!-- login-->
+            <a href="cadastro.html"><img src="imagens/perfil.png" alt="perfil"></a>
+        </div>
+    </header>
+
+    <main>
+        <nav class="navbar"> <!-- Barra de navegação-->
+            <a href="produtos.html">Produtos</a><!-- links para as abas-->
+        </nav>
+        <div class="banner">
+            <img src="imagens/banner30des.png" alt="banner"> <!-- banner-->
+        </div>
+
+        <section class="bloco-mais-vendidos">
+            <h2 class="compre">Compre os<span class="vendido-categoria"> Mais Vendidos</span></h2> <!-- titulo dos mais vendidos-->
+
+            <div class="sesao"><!-- produtos-->
+                <div class="produtos">
+                    <img src="pijamas/pi1.jpg" alt="pijama 1">
+                    <p class="nome-produto">Estrelinhas</p>
+                    <p class="valor-produto">R$ 12,34</p>
+                </div>
+                <div class="produtos">
+                    <img src="pijamas/pi2.jpg" alt="pijama 2">
+                    <p class="nome-produto">purple sky</p>
+                    <p class="valor-produto">R$ 12,34</p>
+                </div>
+                <div class="produtos">
+                    <img src="pijamas/pi3.jpg" alt="pijama 3">
+                    <p class="nome-produto">honey bear</p>
+                    <p class="valor-produto">R$ 12,34</p>
+                </div>
+                <div class="produtos">
+                    <img src="pijamas/pi4.jpg" alt="pijama 4">
+                    <p class="nome-produto">Tangerina</p>
+                    <p class="valor-produto">R$ 12,34</p>
+                </div>
+            </div>
+        </section>
+        <div class="branco"></div> <!-- para criar um degrade de branco para roxo-->
+
+        <section class="bloco-categorias"><!-- categorias-->
+            <h2 class="comprec">Compre por <span class="vendido-cat">Categoria</span></h2>
+            <div class="sesao">
+                <div class="produtos">
+                    <img src="imagens/categoria/novo.png">
+                </div>
+                <div class="produtos">
+                    <img src="imagens/categoria/mais-vendidos.png">
+                </div>
+                <div class="produtos">
+                    <img src="imagens/categoria/promocao.png">
+                </div>
+                <div class="produtos">
+                    <img src="imagens/categoria/ideias.png">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contatos">
+            <a href="https://www.instagram.com/jessicaejansson/" class="contatos"> <!-- link para direcionamento para a conta do instagram-->
+                <img src="imagens/contato/insta.png" alt="Instagram">
+                Jessica Jansson
+            </a>
+            <a href="https://www.tiktok.com/@jessicaejansson" class="contatos"> <!-- link para direcionamento para a conta do tiktok-->
+                <img src="imagens/contato/tiktok.png" alt="TikTok">
+                Jessica Jansson
+            </a>
+            <a href="https://wa.me/5541987053625" class="contatos"> <!-- link para direcionamento para a conta do whats -->
+                <img src="imagens/contato/whats.png" alt="WhatsApp">
+                (41) 98705-3625
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
