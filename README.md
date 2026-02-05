@@ -13,4 +13,4 @@ Projeto de interface para loja virtual desenvolvido para a disciplina de Desenvo
 * Design focado em UX (User Experience) e navegabilidade.
 
 ## 🔗 Demonstração
-[Link para o seu GitHub Pages aqui]
+https://emily-mirian.github.io/pilhamas-ecommerce-interface/
